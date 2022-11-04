@@ -1,0 +1,1192 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Montserrat:wght@200;300;400&family=Quicksand:wght@300;400&family=Roboto+Mono:wght@100;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=Quicksand:wght@300;400&family=Roboto+Mono:wght@100;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+* {
+    margin: 0;
+    height: 100%;
+}
+
+html {
+    font-family: 'Montserrat', sans-serif;
+    background-attachment: fixed;
+    scroll-behavior: smooth;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: #cc0000;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=Quicksand:wght@300;400&family=Roboto+Mono:wght@100;400&display=swap');
+.im {
+    transform: scale(0.90);
+    transition: transform .2s;
+}
+.im:hover {
+    transform: scale(1.10);
+}
+.cls2 {
+    transition: transform .15s;
+}
+.cls2:hover {
+    transform: scale(1.10);
+}
+.cls1 {
+    transition: transform .10s;
+}
+.cls1:hover {
+    transform: scale(1.20);
+}
+.brandimg {
+    transition: transform .10s;
+}
+.brandimg:hover {
+    transform: scale(1.20);
+}
+
+.infobutton {
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 2px;
+    background-color: #fdfdfd00;
+    border: none;
+    color: #FFFFFF;
+    position: relative;
+    text-align: center;
+    font-size: 13px;
+    padding: 10px;
+    width: 190px;
+    -left:35%;
+    -margin-top:110px;
+    height: 40px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 4px;
+}
+.vertical {
+    border-left: 1.5px solid rgb(175, 175, 175);
+    height: 15px;
+}
+
+.verticalfixed {
+    border-left: 1.5px solid rgb(175, 175, 175);
+    opacity: 100%;
+    height: 15px;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-attachment: fixed;
+    width: 100%;
+    overflow-x: hidden
+}
+
+.home {
+    background-image: url("img/downloadblack.png");
+    height: 90%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.home404 {
+    background-image: url("img/downloadblack.png");
+    height: 40%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.in {
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    color: white;
+    height: auto;
+    margin-top: 385px;
+}
+
+.not {
+    background-color: #0066ffd2;
+    background-image: url("img/sped.png");
+    height: 4%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.innot {
+    text-align: center;
+    position: absolute;
+    font-size: 50%;
+    width: 100%;
+    color: white;
+    height: auto;
+    margin-top: 8px;
+}
+
+.in404 {
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    color: white;
+    height: auto;
+    margin-top: 385px;
+}
+
+.not404 {
+    background-color: #0066ffd2;
+    background-image: url("img/sped.png");
+    height: 4%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.innot404 {
+    text-align: center;
+    position: absolute;
+    font-size: 50%;
+    width: 100%;
+    color: white;
+    height: auto;
+    margin-top: 8px;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.button {
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 2px;
+    background-color: #0044ffee;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 15px;
+    padding: 10px;
+    width: 130px;
+    height: 40px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 0px;
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button:hover span {
+    padding-right: 25px;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.buttonhome {
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 2px;
+    background-color: #0044ff00;
+    border: none;
+    color: #FFFFFF;
+    position:fixed;
+    text-align: center;
+    font-size: 15px;
+    padding: 10px;
+    width: 130px;
+    left: 71.2%;
+    top:1%;
+    height: 40px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 0px;
+}
+
+.buttonhome span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.buttonhome span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.buttonhome:hover {
+    background-color:#ffffff70;
+}
+
+.buttonhome:hover span {
+    padding-right: 25px;
+}
+
+.buttonhome:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.scrolltuup {
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 2px;
+    background-color: #002fffcb;
+    border: none;
+    color: #FFFFFF;
+    position: fixed;
+    text-align: center;
+    font-size: 15px;
+    padding: 10px;
+    width: 160px;
+    left: 1.2%;
+    bottom: 1%;
+    height: 40px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 0px;
+}
+
+.scrolltuup span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.scrolltuup span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.scrolltuup:hover {
+    background-color:#758eff7c;
+}
+
+.scrolltuup:hover span {
+    padding-right: 25px;
+}
+
+.scrolltuup:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.buttonshoes2 {
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 2px;
+    background-color: #0044ffe5;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 15px;
+    padding: 10px;
+    width: 130px;
+    height: 40px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 0px;
+}
+
+.buttonshoes2 span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.buttonshoes2 span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.buttonshoes2:hover {
+    background-color:#88b1ff70;
+}
+
+.buttonshoes2:hover span {
+    padding-right: 25px;
+}
+
+.buttonshoes2:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.buttonshoes {
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 2px;
+    background-color: #0044ff00;
+    border: none;
+    color: #FFFFFF;
+    position:fixed;
+    text-align: center;
+    font-size: 15px;
+    padding: 10px;
+    width: 130px;
+    right:15%;
+    top:1%;
+    height: 40px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 0px;
+}
+
+.buttonshoes span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.buttonshoes span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.buttonshoes:hover {
+    background-color:#ffffff70;
+}
+
+.buttonshoes:hover span {
+    padding-right: 25px;
+}
+
+.buttonshoes:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.buttonlogo {
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 2px;
+    background-color: #0044ff00;
+    border: none;
+    color: #FFFFFF;
+    position:fixed;
+    text-align: center;
+    font-size: 15px;
+    padding: 10px;
+    width: 150px;
+    left:1%;
+    top:1%;
+    height: 40px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 0px;
+}
+
+.buttonlogo::-webkit-scrollbar {
+    background-color: #0044ff;
+}
+
+.buttonlogo span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.buttonlogo span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.buttonlogo:hover {
+    background-color:#ffffff70;
+}
+
+.buttonlogo:hover span {
+    padding-right: 25px;
+}
+
+.buttonlogo:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.buttonmagliette {
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 2px;
+    background-color: #0044ff00;
+    border: none;
+    color: #FFFFFF;
+    position:fixed;
+    text-align: center;
+    font-size: 15px;
+    padding: 10px;
+    width: 130px;
+    right:8%;
+    top:1%;
+    height: 40px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 0px;
+}
+
+.buttonmagliette span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.buttonmagliette span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.buttonmagliette:hover {
+    background-color:#ffffff70;
+}
+
+.buttonmagliette:hover span {
+    padding-right: 25px;
+}
+
+.buttonmagliette:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.buttonmagliett4 {
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 2px;
+    background-color: #ffffff00;
+    border: none;
+    color: #FFFFFF;
+    position: relative;
+    text-align: center;
+    font-size: 13px;
+    padding: 10px;
+    width: 150px;
+    -right:8%;
+    -margin-top:110px;
+    height: 40px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 4px;
+}
+
+.infobutton {
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 2px;
+    background-color: #ffffff00;
+    border: none;
+    color: #FFFFFF;
+    position: relative;
+    text-align: center;
+    font-size: 13px;
+    padding: 10px;
+    width: 150px;
+    -right:8%;
+    -margin-top:110px;
+    height: 40px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 4px;
+}
+
+.buttonmagliett4:hover {
+    background-color: rgba(0, 60, 255, 0.205);
+}
+
+.infobutn {
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 2px;
+    background-color: #ffffff00;
+    border: none;
+    color: #FFFFFF;
+    position: relative;
+    text-align: center;
+    font-size: 13px;
+    padding: 10px;
+    width: 150px;
+    -right:8%;
+    -margin-top:110px;
+    height: 40px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 4px;
+}
+
+.infobutn:hover {
+    opacity: 50%;
+}
+
+.infobutnfixed {
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 2px;
+    background-color: #ffffff00;
+    border: none;
+    color: #FFFFFF;
+    position: relative;
+    text-align: center;
+    font-size: 12px;
+    padding: 10px;
+    width: 150px;
+    -right:8%;
+    -margin-top:110px;
+    height: 40px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 4px;
+}
+
+.infobutnfixed:hover {
+    opacity: 50%;
+}
+
+.buttonitem {
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 2px;
+    background-color: #ffffff00;
+    border: none;
+    color: #FFFFFF;
+    position: relative;
+    text-align: center;
+    font-size: 13px;
+    padding: 10px;
+    width: 150px;
+    -right:8%;
+    -margin-top:110px;
+    height: 40px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 4px;
+}
+
+.buttonitem:hover {
+    color: rgba(0, 0, 0, 0.466);
+}
+
+.parentbutton {
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 2px;
+    background-color: #ffffff8f;
+    border: none;
+    color: #FFFFFF;
+    position: relative;
+    text-align: center;
+    font-size: 13px;
+    padding: 10px;
+    width: 150px;
+    -right:8%;
+    -margin-top:110px;
+    height: 40px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 4px;
+}
+
+.parentbutton:hover {
+    background-color: rgba(0, 60, 255, 0.205);
+}
+
+.buttonmagliett3 {
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 1px;
+    background-color: rgba(255, 255, 255, 0.00);
+    border: none;
+    color: #FFFFFF;
+    position: static;
+    text-align: center;
+    font-size: 15px;
+    padding: 10px;
+    width: 150px;
+    -right:8%;
+    top:1%;
+    height: 40px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.buttonmagliett3 span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.buttonmagliett3 span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.buttonmagliett3:hover {
+    background-color:#ffffff70;
+}
+
+.buttonmagliett3:hover span {
+    padding-right: 25px;
+}
+
+.buttonmagliett3:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.buttmob {
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 1px;
+    background-color: rgba(255, 255, 255, 0.00);
+    border: none;
+    color: #FFFFFF;
+    position: relative;
+    text-align: center;
+    font-size: 15px;
+    padding: 10px;
+    width: 150px;
+    left:11%;
+    -top:1%;
+    height: 40px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.buttmob span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.buttmob span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.buttmob:hover {
+    background-color:#ffffff70;
+}
+
+.buttmob:hover span {
+    padding-right: 25px;
+}
+
+.buttmob:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.buttontute {
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 2px;
+    background-color: #0044ff00;
+    border: none;
+    color: #FFFFFF;
+    position:fixed;
+    text-align: center;
+    font-size: 15px;
+    padding: 10px;
+    width: 130px;
+    right:1.05%;
+    top:1%;
+    height: 40px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 0px;
+}
+
+.buttontute span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.buttontute span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.buttontute:hover {
+    background-color:#ffffff70;
+}
+
+.buttontute:hover span {
+    padding-right: 25px;
+}
+
+.buttontute:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.buttonmagliette2 {
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 2px;
+    background-color: #0044ff00;
+    border: none;
+    color: #FFFFFF;
+    position:fixed;
+    text-align: center;
+    font-size: 15px;
+    padding: 10px;
+    width: 130px;
+    right:8%;
+    top:1%;
+    height: 40px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 0px;
+}
+
+.buttonmagliette2 span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.buttonmagliette2 span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.buttonmagliette2:hover {
+    background-color:#ffffff70;
+}
+
+.buttonmagliette2:hover span {
+    padding-right: 25px;
+}
+
+.buttonmagliette2:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.buttontute2 {
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 2px;
+    background-color: #0044ffee;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 15px;
+    padding: 10px;
+    width: 130px;
+    height: 40px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 0px;
+}
+
+.buttontute2 span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.buttontute2 span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.buttontute2:hover {
+    background-color:#ffffff70;
+}
+
+.buttontute2:hover span {
+    padding-right: 25px;
+}
+
+.buttontute2:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.desc {
+    color: black;
+}
+
+.title {
+    color: black;
+    font-size: 150%;
+}
+
+.footer {
+    color: rgb(255, 255, 255);
+    font-size: 60%;
+}
+
+.mainpage {
+    opacity: 100%
+}
+
+.im {
+    transform: scale(0.90);
+    transition: transform .2s;
+}
+.im:hover {
+    transform: scale(1.10);
+}
+.tn {
+    transform: scale(0.90);
+    transition: transform .2s;
+}
+.tn:hover {
+    transform: scale(1.10);
+}
+.cls2 {
+    transition: transform .15s;
+}
+.cls2:hover {
+    transform: scale(0.90);
+}
+.cls1 {
+    transition: transform .10s;
+}
+.cls1:hover {
+    transform: scale(1.20);
+}
+.brandimg {
+    transition: transform .10s;
+}
+.brandimg:hover {
+    transform: scale(1.20);
+}
+.wtfbutton {
+    font-family: 'Montserrat', sans-serif;
+    border: 2px;
+    border-top-left-radius: 2em;
+    border-bottom-left-radius: 2em;
+    background-color: #ffffff;
+    -border: none;
+    color: #000000;
+    position: fixed;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 10px;
+    width: 160px;
+    right: 0%;
+    bottom: 3%;
+    height: 40px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 0px;
+}
+.wtfbutton span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+.wtfbutton span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.wtfbutton:hover span {
+    opacity: 50%;
+    padding-right: 25px;
+}
+
+.wtfbutton:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.searchfor {
+    font-family: 'Montserrat', sans-serif;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid rgba(0, 0, 0, 0.348);
+    margin-top: 10px;
+    width: 70%;
+}
+
+.searchfor:focus {
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.209);
+}
+        
+.text-decoration-line-through {
+    text-decoration: line-through !important;
+    font-family: 'Roboto Mono', monospace;
+    color: rgba(0, 0, 0, 0.422);
+    transition: all 0.5s;
+}
+
+.text-decoration-line-through:hover {
+    color: rgba(0, 0, 0, 0.116);
+}
+
+.text {
+    font-size: 125%;
+    transition: all 0.5s;
+    color:black;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.text:hover {
+    opacity: 60%;
+}
+
+.infobutton {
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 2px;
+    background-color: #fdfdfd00;
+    border: none;
+    color: #FFFFFF;
+    position: relative;
+    text-align: center;
+    font-size: 13px;
+    padding: 10px;
+    width: 190px;
+    height: 40px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 4px;
+}
+        
+.ico {
+    transition: all 0.3s;
+}
+
+.ico:hover {
+    transform: scale(110%);
+}
+
+.dropdownsizes {
+    font-family: 'Montserrat', sans-serif;
+    transform: scale(100%);
+    font-size: 110%;
+    padding: 10px 25px 10px 40px;
+    border: 0.1px solid rgba(0, 0, 0, 0.526);
+}
+
+.orderbutton {
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 2px;
+    background-color: #0044ff00;
+    border: none;
+    color: #000000;
+    text-align: center;
+    font-size: 15px;
+    padding: 10px;
+    width: 130px;
+    height: 40px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 0px;
+    font-weight: bold;
+}
+
+.orderbutton:hover {
+    color:rgba(0, 0, 0, 0.671);
+}
+
+.orderbutton span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.orderbutton span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.orderbutton:hover span {
+    padding-right: 25px;
+}
+
+.orderbutton:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.dropdownsizes:focus {
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 1);
+}
+
+.dropdownsizes:hover {
+    transform: scale(100%);
+}
+
+.itemImage {
+    transition: all 0.3s;
+}
+
+.itemImage:hover {
+    transform: scale(90%);
+}
+
+.itemImage {
+    width: 310px
+}
+
+.dropdownsizes option {
+    background-color: #ffffff;
+}
+
+.pathtext {
+    text-decoration: none;
+}
+
+.pathtext:hover {
+    text-decoration: underline;
+}
+
+.parentTitle {
+    color:black;
+    transition: all 0.3s;
+}
+
+.parentTitle:hover {
+    opacity: 50%;
+}
+
+.sizebutton {
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 0px;
+    background-color: #b8b8b836;
+    border: none;
+    color: #000000;
+    text-align: center;
+    font-size: 15px;
+    padding: 10px;
+    width: 130px;
+    height: 40px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 0px;
+    font-weight: normal;
+}
+
+.sizebutton:hover {
+    opacity: 50%;
+}
+
+.sizebutton span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+.sizebutton span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.sizebutton:hover span {
+    padding-right: 25px;
+}
+
+.sizebutton:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+@media screen and (max-width: 370px){
+    .itemImage {
+        width: 285px
+    }
+}
+
+@media screen and (max-width: 340px){
+    .infobutn {
+        width: 110px;
+        font-size: 11px;
+    }
+    .infobutnfixed {
+        width: 110px;
+        font-size: 9px;
+    }
+    
+}
+
+@media screen and (max-width: 485px) {
+    .verticalfixed {
+        opacity: 0%;
+    }
+}
+
+@media screen and (max-width: 241px) {
+    .vertical {
+        opacity: 0%;
+    }
+}

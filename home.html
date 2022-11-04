@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <script>
+        function filterFunction() {
+            var input, filter, ul, li, a, i, txtValue;
+            input = document.getElementById("searchfor");
+            filter = input.value.toUpperCase();
+            ul = document.getElementById("containeritems");
+            li = ul.getElementsByClassName("item");
+            for (i = 0; i < li.length; i++) {
+                cnt = li[i].getElementsByClassName("itemtitle")[0];
+                a = cnt.getElementsByTagName("a")[0];
+                tags = li[i].getElementsByClassName("tags")[0];
+                tgs = tags.getElementsByTagName("a")[0];
+                txtValue = tgs.textContent || tgs.innerText;
+                txtValue2 = a.textContent || a.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1 || txtValue2.toUpperCase().indexOf(filter) > -1) {
+                    li[i].style.display = "inline-block";
+                } else {
+                    li[i].style.display = "none";
+                }
+            }
+        }
+
+        function filterByButton(tag) {
+            var input, filter, ul, li, a, i, txtValue;
+            filter = tag.toString().toUpperCase();
+            ul = document.getElementById("containeritems");
+            li = ul.getElementsByClassName("item");
+            btag1 = document.getElementById("bshoes")
+            btag2 = document.getElementById("bshirts")
+            btag3 = document.getElementById("bsuites")
+            switch (tag) {
+                case "scarpe":
+                    btag1.style.opacity = "100%";
+                    btag2.style.opacity = "30%";
+                    btag3.style.opacity = "30%";
+                break
+                case "magliette":
+                    btag1.style.opacity = "30%";
+                    btag2.style.opacity = "100%";
+                    btag3.style.opacity = "30%";
+                break
+                case "tute":
+                    btag1.style.opacity = "30%";
+                    btag2.style.opacity = "30%";
+                    btag3.style.opacity = "100%";
+                break
+            }
+            for (i = 0; i < li.length; i++) {
+                cnt = li[i].getElementsByClassName("itemtitle")[0];
+                a = cnt.getElementsByTagName("a")[0];
+                tags = li[i].getElementsByClassName("tags")[0];
+                tgs = tags.getElementsByTagName("a")[0];
+                txtValue = tgs.textContent || tgs.innerText;
+                txtValue2 = a.textContent || a.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1 || txtValue2.toUpperCase().indexOf(filter) > -1) {
+                li[i].style.display = "inline-block";
+                } else {
+                    li[i].style.display = "none";
+                }
+            }
+        }
+
+        function resetTags() {
+            var input, filter, ul, li, a, i, txtValue;
+            filter = ""
+            ul = document.getElementById("containeritems");
+            li = ul.getElementsByClassName("item");
+            document.getElementById("bshoes").style.opacity = "100%";
+            document.getElementById("bshirts").style.opacity = "100%";
+            document.getElementById("bsuites").style.opacity = "100%";
+            for (i = 0; i < li.length; i++) {
+                cnt = li[i].getElementsByClassName("itemtitle")[0];
+                a = cnt.getElementsByTagName("a")[0];
+                tags = li[i].getElementsByClassName("tags")[0];
+                tgs = tags.getElementsByTagName("a")[0];
+                txtValue = tgs.textContent || tgs.innerText;
+                txtValue2 = a.textContent || a.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1 || txtValue2.toUpperCase().indexOf(filter) > -1) {
+                    li[i].style.display = "inline-block";
+                } else {
+                    li[i].style.display = "inline-block";
+                }
+            }
+        }
+    </script>
+    <head>
+        <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    </head>
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <style>
+        .item {
+            animation-name: opacity;
+            animation-duration: 1.5s;
+        }
+        @keyframes opacity{
+            0% {opacity: 0;}
+            100% {opacity: 1;}
+        }
+        .infobutn:hover {
+            text-decoration: underline;
+        }    
+        .footerheader {
+            background-image: url("./261496e8.jpeg");
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+            background-size: cover;
+            height: 15%;
+        }
+    </style>
+    <style>
+    </style>
+    <title>Drip Together - Catalogo</title>
+    <link rel = "icon" href = "./logo.png" type = "image/icon type">
+    <link href = "./style.css" rel="stylesheet"></link>
+    <meta name = "viewport" content = "width=device-width,initial-scale=1.0">
+    <center>
+        <div class = "mainpage">
+            <a href = "./home.html"> <img src = "./logo.png" style = "box-shadow: rgba(5, 1, 255, 0.45) 0px 25px 50px -12px; border-radius: 50%; width: 150px; height: auto; padding: 10px;"></a><br>
+            <div class = "staticHeaders" style = "height: auto;">
+            <div style = "height: auto; background-color: rgba(0, 0, 0, 0); box-shadow: 0px 0 30px 10px #00000000;" class = "container"><br><a href = "./pages/terms.html#tos"><button style = "color: black" class = "infobutn"><span>Politiche</span></button></a>
+            <a href = "" class = "vertical"></a><a href = "./pages/terms.html#payments"><button style = "color: black" class = "infobutn"><span>Pagamenti</span></button></a></div>
+            <div style = "height: auto;" class = "headers"><input class = "searchfor" style = "box-shadow: rgba(5, 1, 255, 0.00) 0px 25px 50px -12px; background-color:white; top: 5%; height: auto;" type = "text" id = "searchfor" onkeyup = "filterFunction()" placeholder = "Cerca per nome, modello, colore" title = "Inserisci le parole chiavi">
+                <div class = "mid" style = "padding-top:0.1%;margin-top: 1px; width: 70%; height: 1px; border-bottom: 1.5px solid #bbbbbb00; text-align: center; margin-bottom: 30px;"></div>
+                <div style = "height: auto; background-color: rgba(0, 0, 0, 0); box-shadow: 0px 0 30px 10px #00000000;" class = "container">
+                    <button onclick = "resetTags()" style = "font-size: 13px; color: black; font-weight: bold;" class = "infobutn"><span>Reset Filtri</span></button><br>
+                    <button id = "bshoes" onclick = "filterByButton('scarpe')" style = "font-size: 14px; color: black" class = "infobutn"><span>Scarpe</span></button><a href = "" class = "vertical"></a>
+                    <button id = "bshirts" onclick = "filterByButton('magliette')" style = "font-size: 14px; color: black" class = "infobutn"><span>Vestiti</span></button><a href = "" class = "verticalfixed"></a>
+                    <button id = "bsuites" onclick = "filterByButton('tute')" style = "font-size: 13.7px; color: black" class = "infobutn"><span>Accessori</span></button>
+                </div>
+            </div>
+            </div>
+            <span class = "space"><br></span><span class = "space"><br></span>
+            <div class = "mid" style = "padding-top:0.5%;margin-top: 1px; width: 40%; height: 1px; border-bottom: 1.5px solid #bbbbbb75; text-align: center; margin-bottom: 30px;"></div>
+            <span class = "parentTitle" style = "color:black;font-size: 105%;">Prodotti Disponibili<br></span>
+            <span style = "height: auto;"><br></span>
+            <div style = "height: auto" class = "container" id = "containeritems">
+                <div id = "itm" class = "item" style = "display: inline-block; padding: 0px; width: 190px; height: 250px; box-shadow: 0px 0 30px 10px rgba(255, 255, 255, 0);">
+                    <div class = "cls2" style = "height: auto;"><a href = "./products/j4-oreo.html"><img class = "im" src = "https://images.stockx.com/360/Air-Jordan-4-Retro-White-Oreo-2021/Images/Air-Jordan-4-Retro-White-Oreo-2021/Lv2/img04.jpg?fm=webp&auto=compress&w=576&dpr=1&updated_at=1635274567&h=384&q=75" style = "width: auto; height: 120px;"></a></div>
+                    <div class = "itemtitle" style = "height: auto;"><a href = "./products/j4-oreo.html" style = "color: black; font-size: 85%; text-decoration: none;"><br>J4 Oreo</a></div>
+                    <a href = "./products/j4-oreo.html" style = "font-family: 'Roboto Mono', monospace; color: black; opacity: 80%; font-size: 85%; text-decoration: line-through !important;"><br>€220,99 </a>
+                    <div class = "cls1" style = "height: auto;"><a href = "./products/j4-oreo.html" style = "font-family: 'Roboto Mono', monospace; color: black; font-size: 105%; text-decoration: none">€134,99</a></div>
+                    <div class = "tags" style = "height: auto; font-size: 0px; scale: 0%; color: white; opacity: 0%;"><a href = "./products/j4-oreo.html" style = "height: auto;">scarpe jordan j4 oreo bianche bianco white</a></div>
+                </div>
+                <div id = "itm" class = "item" style = "display: inline-block; padding: 0px; width: 190px; height: 250px; box-shadow: 0px 0 30px 10px rgba(255, 255, 255, 0);">
+                    <div class = "cls2" style = "height: auto;"><a href = "./products/j4-lightning.html"><img class = "im" src = "https://images.stockx.com/360/Air-Jordan-4-Retro-Lightning-2021/Images/Air-Jordan-4-Retro-Lightning-2021/Lv2/img04.jpg?fm=webp&auto=compress&w=576&dpr=1&updated_at=1638476062&h=384&q=75" style = "width: auto; height: 120px;"></a></div>
+                    <div class = "itemtitle" style = "height: auto;"><a href = "./products/j4-lightning.html" style = "color: black; font-size: 85%; text-decoration: none;"><br>J4 Lightning</a></div>
+                    <div class = "cls1" style = "height: auto;"><a href = "./products/j4-lightning.html" style = "font-family: 'Roboto Mono', monospace; color: black; opacity: 80%; font-size: 85%; text-decoration: line-through !important;"><br>€220,99 </a></div>
+                    <div class = "cls1" style = "height: auto;"><a href = "./products/j4-lightning.html" style = "font-family: 'Roboto Mono', monospace; color: black; font-size: 105%; text-decoration: none">€134,99</a></div>
+                    <div class = "tags" style = "height: auto; font-size: 0px; scale: 0%; color: white; opacity: 0%;"><a href = "./products/j4-lightning.html" style = "height: auto;">scarpe jordan j4 light lightning gialle giallo yellow</a></div>
+                </div>
+                <div id = "itm" class = "item" style = "display: inline-block; padding: 0px; width: 190px; height: 250px; box-shadow: 0px 0 30px 10px rgba(255, 255, 255, 0);">
+                    <div class = "cls2" style = "height: auto;"><a href = "./products/j4-blackcat.html"><img class = "im" src = "https://images.stockx.com/360/Air-Jordan-4-Retro-Black-Cat-2020/Images/Air-Jordan-4-Retro-Black-Cat-2020/Lv2/img04.jpg?fm=webp&auto=compress&w=576&dpr=1&updated_at=1635341304&h=384&q=75" style = "width: auto; height: 120px;"></a></div>
+                    <div class = "itemtitle" style = "height: auto;"><a href = "./products/j4-blackcat.html" style = "color: black; font-size: 85%; text-decoration: none;"><br>J4 Black Cat</a></div>
+                    <div class = "cls1" style = "height: auto;"><a href = "./products/j4-blackcat.html" style = "font-family: 'Roboto Mono', monospace; color: black; opacity: 80%; font-size: 85%; text-decoration: line-through !important;"><br>€220,99 </a></div>
+                    <div class = "cls1" style = "height: auto;"><a href = "./products/j4-blackcat.html" style = "font-family: 'Roboto Mono', monospace; color: black; font-size: 105%; text-decoration: none">€134,99</a></div>
+                    <div class = "tags" style = "height: auto; font-size: 0px; scale: 0%; color: white; opacity: 0%;"><a href = "./products/j4-blackcat.html" style = "height: auto;">scarpe jordan j4 black cat black nere nero blackcat</a></div>
+                </div>
+                <div id = "itm" class = "item" style = "display: inline-block; padding: 0px; width: 190px; height: 250px; box-shadow: 0px 0 30px 10px rgba(255, 255, 255, 0);">
+                    <div class = "cls2" style = "height: auto;"><a href = "./products/j4-metallicred.html"><img class = "im" src = "https://images.stockx.com/360/Air-Jordan-4-Retro-White-University-Red/Images/Air-Jordan-4-Retro-White-University-Red/Lv2/img04.jpg?fm=webp&auto=compress&w=576&dpr=1&updated_at=1634922871&h=384&q=75" style = "width: auto; height: 120px;"></a></div>
+                    <div class = "itemtitle" style = "height: auto;"><a href = "./products/j4-metallicred.html" style = "color: black; font-size: 85%; text-decoration: none;"><br>J4 Metallic Red</a></div>
+                    <div class = "cls1" style = "height: auto;"><a href = "./products/j4-metallicred.html" style = "font-family: 'Roboto Mono', monospace; color: black; opacity: 80%; font-size: 85%; text-decoration: line-through !important;"><br>€220,99 </a></div>
+                    <div class = "cls1" style = "height: auto;"><a href = "./products/j4-metallicred.html" style = "font-family: 'Roboto Mono', monospace; color: black; font-size: 105%; text-decoration: none">€134,99</a></div>
+                    <div class = "tags" style = "height: auto; font-size: 0px; scale: 0%; color: white; opacity: 0%;"><a href = "./products/j4-metallicred.html" style = "height: auto;">scarpe jordan j4 red metallic metalic metallicred metalicred red white bianche bianco rosso rosse</a></div>
+                </div>
+                <div id = "itm" class = "item" style = "display: inline-block; padding: 0px; width: 190px; height: 250px; box-shadow: 0px 0 30px 10px rgba(255, 255, 255, 0);">
+                    <div class = "cls2" style = "height: auto;"><a href = "./products/j4-metallicgreen.html"><img class = "im" src = "https://images.stockx.com/360/Air-Jordan-4-Retro-White-Pine-Green/Images/Air-Jordan-4-Retro-White-Pine-Green/Lv2/img04.jpg?fm=webp&auto=compress&w=576&dpr=1&updated_at=1635345559&h=384&q=75" style = "width: auto; height: 120px;"></a></div>
+                    <div class = "itemtitle" style = "height: auto;"><a href = "./products/j4-metallicgreen.html" style = "color: black; font-size: 85%; text-decoration: none;"><br>J4 Metallic Green</a></div>
+                    <div class = "cls1" style = "height: auto;"><a href = "./products/j4-metallicgreen.html" style = "font-family: 'Roboto Mono', monospace; color: black; opacity: 80%; font-size: 85%; text-decoration: line-through !important;"><br>€220,99 </a></div>
+                    <div class = "cls1" style = "height: auto;"><a href = "./products/j4-metallicgreen.html" style = "font-family: 'Roboto Mono', monospace; color: black; font-size: 105%; text-decoration: none">€134,99</a></div>
+                    <div class = "tags" style = "height: auto; font-size: 0px; scale: 0%; color: white; opacity: 0%;"><a href = "./products/j4-metallicgreen.html" style = "height: auto;">scarpe jordan j4 green metallic metalic metallicgreen metalicgreen green white bianche bianco verde verdi</a></div>
+                </div>
+            </div>
+            <span class = "space"><br></span>
+            <div class = "mid" style = "padding-top:0.5%;margin-top: 1px; width: 30%; height: 1px; border-bottom: 1.5px solid #bbbbbb75; text-align: center; margin-bottom: 30px;"></div>
+            <div class = "footerheader"></div>
+            <br><div class = "mid" style = "padding-top:0.5%;margin-top: 1px; width: 40%; height: 1px; border-bottom: 1.5px solid #bbbbbb75; text-align: center; margin-bottom: 30px;"></div>
+            <a style = "text-decoration: none;" class = "footer" href = "https://www.instagram.com/drip_together"><span style = "color: rgb(0, 0, 0); font-size: 125%; padding: 35px;" >Drip Together ®️2022-2023. Tutti i diritti riservati</span></a><br>
+            </div>
+        </div>
+    </center>
+    <a href = "https://www.instagram.com/direct/t/340282366841710300949128143425018997049"><button style = "box-shadow: rgba(5, 1, 255, 0.5) 0px 25px 50px -3px" class = "wtfbutton"><span>Serve Aiuto?</span></button></a>
+</html>
